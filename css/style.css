@@ -9,6 +9,8 @@ header{
     width: 100%;
     background-color: rgb(253, 106, 43);
     position: fixed;
+    z-index: 1;
+
 }
 .container-header{
   padding-left:70px; 
@@ -39,8 +41,7 @@ a, i, h4, h5{
 
 /* main */
 .container{
-    background-color: aquamarine;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
    
 
@@ -50,22 +51,98 @@ a, i, h4, h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; 
+    row-gap: 20px;
     padding-top: 100px;
     padding-bottom: 50px;
-    
-   
-
 }
 
 .col{
-    background-color: gold;
-    width: calc(80% / 3 - 10px);
-    height: 300px ;
-    border: 1px solid black;
+    width: calc(80% / 3 - 10px); 
+   
+}
+/* stile prodotti */
+.product{
+    position: relative;
+}
+
+.product img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hearts{
+    position: absolute;
+    top: 3px;
+    right: 0;
+    background-color: white;
+    padding: 2px 5px;
+}
+
+.hearts:hover{
+    color: red;
+}
+
+.sconto{
+    background-color: red; 
+}
+.sostenibilità{
+    background-color: green;
+}
+
+.sconto, .sostenibilità{
+    color: white;
+    padding: 5px;
     
+}
+
+.position-sconto-sost{
+    position: absolute;
+    bottom: 100px;
+    left: 3px;
 
 }
+
+    /* stile descrizione articolo */
+    .brand, .costi{
+        font-size: smaller;
+    }
+
+    .descrizione{
+        font-size: small;
+        font-weight: bold;
+    }
+
+    .costo::after{
+        content: '\20AC' ;
+    }
+
+    .scontato{
+        color: red;
+        font-weight: bold
+    }
+    
+    .normale{
+        text-decoration: line-through;
+        margin-left: 10px;
+    }
+
+        /* modalita comparsa scomparsa foto */
+        .show{
+            display: block;
+        }
+        .hidden{
+            display: none;
+        }
+
+        .product:hover .hidden{
+            display: block;
+        }
+
+        .product:hover .show{
+            display: none;
+        }
+
 
 /* footer */
 footer{
