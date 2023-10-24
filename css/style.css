@@ -28,10 +28,70 @@ a{
     text-decoration: none;
 }
 
-a, i{
+a, i, h4, h5{
     color: white;
     margin-left: 10px ;
 }
 #logo{
     max-width: 150px;
+}
+
+
+/* main */
+.container{
+    background-color: aquamarine;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+   
+
+}
+
+.col{
+    background-color: gold;
+    width: calc(80% / 3 - 10px);
+    height: 300px ;
+    border: 1px solid black;
+    
+
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    
+}
+.container-footer{
+    padding-left:70px; 
+    padding-right:70px; 
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.row-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4, h5{
+    margin-bottom: 5px;
+}
+
+h4{
+    font-size: larger;
+}
+
+h5{
+   font-size: small;
 }
